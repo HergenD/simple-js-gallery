@@ -1,3 +1,5 @@
+PREVIEW: https://n-esty.github.io/simple-js-gallery/gallery/
+
 Simple and stylish image slider / gallery.
 
 Made for edzerdillema.nl initially, but decided it might be useful for further projects as well. The slider is pretty basic, any image dimensions will work for the thumbnails, as long as the thumbnails have the same aspect ratio. Clicking a thumbnail will open a modal with a larges size image preview which can be any size or aspect ratio, and also allows the user to click on a link and open the full resolution image in a new tab.
