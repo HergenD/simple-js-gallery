@@ -1,0 +1,193 @@
+html, body {
+    height:100%;
+	width:100%
+} 
+
+body {
+	padding:0;
+	margin:0;
+    background-color: #7a2121;
+}
+
+
+a {
+	color:#A3A3A3;
+	font-size:1em;
+	text-align:center;
+	font-family: Arial;
+	margin:0;
+	text-decoration:none;
+}
+
+
+#modalBot a {
+	font-weight:bold;
+	text-align:left;
+	font-size:1.5vh;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-left:1px;
+	display:block;
+	color:#A3A3A3;
+}
+#modalBot a:hover {
+	color:#FFFFFF;
+}
+
+
+#modal {
+	display:none;
+	width:100vw;
+	height:100vh;
+	position:absolute;
+	top:0;
+	left:0;
+	padding:0;
+	margin:0;
+	z-index:1000;
+	background-color:rgba(0,0,0,0.9);
+	text-align: center;
+}
+#modalCont {
+	position:relative;
+	display: inline-block;
+	margin-left:auto;
+	margin-right:auto;
+}
+#modalTop {
+	height:5vh;
+  color:white;
+}
+#modalTop p {
+	color:rgba(250,250,250,0.8);
+	font-family:arial;
+	font-size:3vh;
+	text-align:right;
+	padding:0;
+	margin:0;
+	padding-top:3px;
+	padding-right:5px;
+	margin-top:0;
+	cursor:pointer;
+}
+#modalTop p:hover {
+	color:rgba(250,250,250,1);
+}
+
+
+
+#modalBot {
+	height:5vh;
+	margin-top:-4px;
+	text-align:left;
+	padding-left:2px;
+}
+
+
+#modal img {
+	padding:0;
+	margin:0;
+	max-height:90vh;
+	max-width:100vw;
+	}
+
+
+
+
+
+
+
+
+#gallery {
+position:absolute;
+left:0;
+width:100vw;
+overflow:hidden;
+top:30vh;
+height:40vh;
+}
+
+
+#slider {
+height:auto;
+width:50000px;
+transition: all 0.7s ease-in-out;
+white-space: nowrap;
+}
+#slidecont {
+	width:100%;
+	height:100%;
+	position:relative;
+	margin:0;
+	padding:0;
+	white-space: nowrap;
+}
+.slide {
+position:relative;
+height:40vh;
+float:left;
+margin:0;
+padding:0 10px 0 10px;
+display: table-cell;
+max-height:95vh;
+
+}
+
+#fadeL, #fadeR {
+	position:absolute;
+	bottom:30vh;
+	background-color:white;
+}
+
+#fadeL, #fadeR {
+	height:40vh;
+	width:30px;
+	margin:0;
+	z-index:25;
+	background-color:rgba(0,0,0,0.4);
+}
+#fadeR {
+	right:0;
+}
+#fadeL {
+	left:0;
+}
+
+#left, #right {
+	border: solid rgba(250,250,250,0.8);
+  border-width: 0 5px 5px 0;
+  padding: 0;
+  height:15px;
+  width:15px;
+  margin-top:calc(20vh - 21.2132px); 
+  cursor:pointer;
+}
+
+#right {
+	transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+	margin-right:10px;
+	margin-left:auto;
+}
+
+#left {
+	transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+	margin-left:10px;
+	margin-right:auto;
+}
+@media only screen and (max-width: 899px) {
+	.slide {
+	height:60vh;
+	}
+	#gallery {
+	top:20vh;
+	height:60vh
+	}
+	#fadeL, #fadeR {
+	height:60vh;
+	bottom:20vh;
+	}
+	#left, #right {
+  margin-top:calc(30vh - 21.2132px); 
+	

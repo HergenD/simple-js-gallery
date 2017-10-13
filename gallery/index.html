@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>
+         Gallery by Hergen Dillema
+      </title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="gallery.css">
+   </head>
+   <body id="body">
+   
+      <!-- Bar on left side of the screen, onclick event is on the entire bar, if needed switch it to the "left" element to only execute when the arrow is clicked -->
+	  <div id="fadeL" onclick="moveLeft()">
+         <div id="left"></div>
+      </div>
+	  <!-- Bar on right side of the screen, onclick event is on the entire bar, if needed switch it to the "left" element to only execute when the arrow is clicked -->
+      <div id="fadeR" onclick="moveRight()">
+         <div id="right"></div>
+      </div>
+	  
+	  <!-- Modal section -->
+      <div id="modal" onclick="closeModal()">
+         <div id="modalCont">
+            <div id="modalTop">
+               <p>&#10006;</p>
+            </div>
+            <img id="modalImg" src="" onclick="noThing()"/>
+            <div id="modalBot" onclick="noThing()"><a id="fullLink" href="" target="_blank">Open in new tab</a></div>
+         </div>
+      </div>
+	  
+	  <!-- Gallery -->
+      <div id="gallery">
+         <div id="slider">
+            <div id="slidecont">
+               <img src="img/thumb/example.jpg" class="slide" onclick="openModal(this.src)"/>
+               <img src="img/thumb/example.jpg" class="slide" onclick="openModal(this.src)"/>
+               <img src="img/thumb/example.jpg" class="slide" onclick="openModal(this.src)"/>
+               <img src="img/thumb/example.jpg" class="slide" onclick="openModal(this.src)"/>
+               <img src="img/thumb/example.jpg" class="slide" onclick="openModal(this.src)"/>
+               <img src="img/thumb/example.jpg" class="slide" onclick="openModal(this.src)"/>
+               <img src="img/thumb/example.jpg" class="slide" onclick="openModal(this.src)"/>
+               <img src="img/thumb/example.jpg" class="slide" onclick="openModal(this.src)"/>
+               <img src="img/thumb/example.jpg" class="slide" onclick="openModal(this.src)"/>
+               <!-- One of the gallery images needs to have the id="slideimg" attribute, the js gets the image width etc from this elemtn -->
+			   <img src="img/thumb/example.jpg" class="slide" onclick="openModal(this.src)" id="slideimg" />	
+            </div>
+         </div>
+      </div>
+	  
+	  
+   </body>
+   <script src="gallery.js"></script>
+</html>
