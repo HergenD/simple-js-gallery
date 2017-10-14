@@ -113,7 +113,7 @@ a {
 #fadeL,
 #fadeR {
     position: absolute;
-    bottom: 30vh;
+    top: 30vh;
     height: 40vh;
     width: 30px;
     margin: 0;
@@ -159,7 +159,7 @@ a {
     #fadeL,
     #fadeR {
         height: 60vh;
-        bottom: 20vh;
+        top: 20vh;
     }
     #left,
     #right {
