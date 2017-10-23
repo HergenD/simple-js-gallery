@@ -22,6 +22,13 @@ function exec() {
     sliderWidth = imgWidth * numImg;
     sliderSize();
     initialPosition();
+	show();
+}
+
+// Hides loading icon and shows image slider
+function show() {
+	document.getElementById('loading').style.display="none";
+	document.getElementById('slider').style.opacity="1";
 }
 
 // Sets width of slider based on amount of images and image width
@@ -164,4 +171,3 @@ function mobileSlide(el, d) {
         moveRight()
     }
 }
-
