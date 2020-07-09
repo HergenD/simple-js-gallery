@@ -1,4 +1,4 @@
-PREVIEW: https://n-esty.github.io/simple-js-gallery/gallery/
+PREVIEW: https://hergend.github.io/simple-js-gallery/gallery/
 
 Simple and stylish image slider / gallery.
 
